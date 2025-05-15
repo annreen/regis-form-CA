@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;            
+            justify-content: center;
+            align-items: center;
+            background: url('chase atlantic concert📸 (1).jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            background: rgba(255, 255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 20px 30px;
+            border-radius: 10px;
+            width: 50%;
+            height: 90%;
+        }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: rgb(255, 255, 255);
+        }
+        .photo {
+            display: block;
+            margin: 0 auto 10px;
+            margin-top: 10px;
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            color: rgb(255, 255, 255);
+        }
+        td {
+            border: 1px solid #ffffff;
+            padding: 3px;
+            font-size: 13px;
+        }
+        td:first-child {
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            background-color: rgba(112, 112, 112, 0.219);
+        }
+        .social-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+        }
+        .social-icon {
+            width: 25px;
+            height: auto;
+        }
+        .social-name {
+            font-size: 12px;
+            font-style: italic;
+            color: #ffffffc0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <div class="title">Biodata Diri</div>
+            <td colspan="2">
+        <img src="IMG-20230711-WA0089.jpg" alt="Foto Profil" class="photo">
+        </td>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td id="username"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td id="useremail"></td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td id="useragama"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td id="useralamat"></td>
+            </tr>
+            <tr>
+                <td>Deskripsi diri</td>
+                <td id="userdeskripsi"></td>
+            </tr>
+            <tr>
+                <td>Umur</td>
+                <td>18 Tahun</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>Jl. Goa Ria, Blok A No. 12</td>
+            </tr>
+            <tr>
+                <td>Tempat / Tanggal Lahir</td>
+                <td>Makassar, 23 Juni 2006</td>
+            </tr>
+            <tr>
+                <td>Pendidikan</td>
+                <td>
+                    <ul>
+                    <li>SD IT Al-Akhyar Pondok Madinah</li>
+                    <li>MTs Ummul Mukminin</li>
+                    <li>MAs Ummul Mukminin</li>
+                    <li>Universitas Islam Negeri Alauddin Makassar Jurusan Teknik Informatika</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>
+                    <ul>
+                    <li>Melukis</li>
+                    <li>Menggambar</li>
+                    <li> Membaca</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <div class="social-container">
+            <a href="https://www.instagram.com/dwiyannisaa" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="social-icon">
+            </a>
+            <span class="social-name">@dwiyannisaa</span>
+        </div>
+    </div>
+    <script>
+window.addEventListener("load", function() {
+    const username = localStorage.getItem("username");
+    const useremail = localStorage.getItem("useremail");
+    const useragama = localStorage.getItem("useragama");
+    const useralamat = localStorage.getItem("useralamat");
+    const userdeskripsi = localStorage.getItem("userdeskripsi");
+
+    if (username) document.querySelector("#username").textContent = username;
+    if (useremail) document.querySelector("#useremail").textContent = useremail;
+    if (useragama) document.querySelector("#useragama").textContent = useragama;
+    if (useralamat) document.querySelector("#useralamat").textContent = useralamat;
+    if (userdeskripsi) document.querySelector("#userdeskripsi").textContent = userdeskripsi;
+    });
+    </script>
+</body>
+</html>
